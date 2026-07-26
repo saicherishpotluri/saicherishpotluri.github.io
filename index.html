@@ -1,137 +1,33 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e547df8025.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sai Cherish Potluri — Fullstack Software Engineer building secure, high-throughput distributed systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <title>Sai Cherish Potluri — Fullstack Software Engineer</title>
 </head>
 
 <body>
-    <section class="hero">
-        <nav>
-            <img class="logo" src="src/images/logo.png" alt="Sai Cherish Potluri's Logo" />
-            <ul id="nav-list">
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 
-                </i>
-            </button>
-        </nav>
-        <div class="hero-area">
-            <div class="hero-text">
-                <h1>Sai Cherish Potluri</h1>
-                <p> Software Developer</p>
-                <div class="button"><a href="#about-me">About me</a></div>
-            </div>
-            <div class="socials">
-                <div><a href="https://twitter.com/potluricherish" class="social">
-                        <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" fill='#ffffff' width="50"
-                            height="50" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
-                        </svg>
-                    </a></div>
-                <div><a href="https://github.com/SaiCherishPotluri" class="social">
-                        <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" fill='#ffffff' width="50"
-                            height="50" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a></div>
-                <div><a href="https://www.linkedin.com/in/saicherishpotluri/" class="social">
-                        <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" fill='#ffffff' width="50"
-                            height="50" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
-                        </svg>
-                    </a></div>
-            </div>
-        </div>
-    </section>
-    <section class="sub-section" id="about-me">
-        <div class="information">
-            <h2>About Me</h2>
-            <p>Hello, I am Sai Cherish Potluri. I am a Software Developer and a graduate student pursuing my master's in
-                Computer Science at Arizona State University with a passion for programming.</p>
-            <div class="button-resume"><a href="src/docs/SaiCherish_Potluri_Resume_SDE.pdf" download class="download-btn">Resume</a>
-            </div>
-        </div>
-        <div class="headshot-container">
-            <img class="headshot" src="src/images/headshot.jpg" alt="headshot" />
-        </div>
-    </section>
-    <section class="sub-section-alt" id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M13.8 7.3c0 .165-.134.3-.301.3-.165 0-.299-.135-.299-.3 0-.165.134-.3.3-.3s.3.135.3.3zm-3.3-.3c-.166 0-.3.135-.3.301 0 .165.134.3.301.3.165 0 .299-.135.299-.3 0-.166-.134-.301-.3-.301zm13.5 5c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-16.2-1.718c0-.483-.417-.883-.9-.882-.483-.001-.9.4-.9.883v3.663c0 .484.417.854.899.854.483 0 .9-.37.9-.854v-3.664zm7.801-.882h-7.202l.001 5.666c0 .517.418.934.935.934h.266v2.125c-.001.482.422.875.905.875.483 0 .894-.393.895-.875v-2.125h1.199v2.125c0 .482.425.875.907.875.483 0 .893-.393.893-.876v-2.124h.268c.514 0 .934-.418.934-.934v-5.666zm0-.602c0-1.353-.723-2.283-1.829-2.903l.563-1.115c.029-.059.011-.132-.045-.166-.055-.032-.122-.01-.152.049l-.57 1.127c-.918-.442-2.126-.487-3.137 0l-.569-1.127c-.03-.059-.097-.08-.152-.049-.056.033-.074.107-.045.166l.563 1.115c-1.106.62-1.829 1.55-1.829 2.903h7.202zm2.399 1.484c0-.483-.417-.883-.899-.882-.483-.001-.9.4-.9.883v3.663c0 .484.417.854.9.854.482 0 .899-.37.899-.854v-3.664z" />
-                </svg>
-                <h3 class="project-name">Knowledge Extraction from Context Sensors</h3>
-                <p class="view-link-button"><a class="project-link"
-                        href="https://github.com/SaiCherishPotluri/Knowledge-Extraction-from-Context-Sensors">View</a>
-                </p>
-            </div>
-            <div class="project-card">
-                <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M4.069 13h-4.069v-2h4.069c-.041.328-.069.661-.069 1s.028.672.069 1zm3.034-7.312l-2.881-2.881-1.414 1.414 2.881 2.881c.411-.529.885-1.003 1.414-1.414zm11.209 1.414l2.881-2.881-1.414-1.414-2.881 2.881c.528.411 1.002.886 1.414 1.414zm-6.312-3.102c.339 0 .672.028 1 .069v-4.069h-2v4.069c.328-.041.661-.069 1-.069zm0 16c-.339 0-.672-.028-1-.069v4.069h2v-4.069c-.328.041-.661.069-1 .069zm7.931-9c.041.328.069.661.069 1s-.028.672-.069 1h4.069v-2h-4.069zm-3.033 7.312l2.88 2.88 1.415-1.414-2.88-2.88c-.412.528-.886 1.002-1.415 1.414zm-11.21-1.415l-2.88 2.88 1.414 1.414 2.88-2.88c-.528-.411-1.003-.885-1.414-1.414zm6.312-10.897c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6z" />
-                </svg>
-                <h3 class="project-name">Weather Forecasting Web Application</h3>
-                <p class="view-link-button"><a class="project-link"
-                        href="https://github.com/SaiCherishPotluri/Weather-App">View</a></p>
-            </div>
-            <div class="project-card">
-                <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M10.938 20h-10.938v-20h21v11.462c-.594-.472-1.269-.843-2-1.094v-4.368h-17v12h8.212c.136.713.384 1.386.726 2zm13.062 2.586l-2.831-2.832c.522-.79.831-1.735.831-2.754 0-2.761-2.238-5-5-5s-5 2.239-5 5 2.238 5 5 5c1.019 0 1.964-.309 2.755-.832l2.831 2.832 1.414-1.414zm-10-5.586c0-1.654 1.346-3 3-3s3 1.346 3 3-1.346 3-3 3-3-1.346-3-3zm-9-1h-2v-5h2v5zm3 0h-2v-8h2v8zm3 0h-2v-3h2v3z" />
-                </svg>
-                <h3 class="project-name">Geospatial Analysis using SparkSQL</h3>
-                <p class="view-link-button"><a class="project-link"
-                        href="https://github.com/SaiCherishPotluri/CSE511-Project-Hotspot-Analysis">View</a></p>
-            </div>
-            <div class="project-card">
-                <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M14 2v2h-4v-2h4zm2-2h-8v6h8v-6zm-12 20v2h-2v-2h2zm2-2h-6v6h6v-6zm16 2v2h-2v-2h2zm2-2h-6v6h6v-6zm-11 2v2h-2v-2h2zm2-2h-6v6h6v-6zm6-2h-2c0-3.75-4.967-1.207-6.942-4.753-1.965 3.526-7.135 1.016-7.142 4.753h-1.916c.003-6.521 7.384-1.532 8-8h2c.616 6.473 8 1.469 8 8z" />
-                </svg>
-                <h3 class="project-name">Socket Programming using TCP IP</h3>
-                <p class="view-link-button"><a class="project-link"
-                        href="https://github.com/SaiCherishPotluri/Socket-Project/tree/master">View</a></p>
-            </div>
-        </div>
-    </section>
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <div class="form-container">
-            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqdodbn" method="post">
-                <label for="full-name">Full Name</label><br>
-                <input type="text" name="name" id="full-name" required=""><br>
-                <label for="email-address">Email Address</label><br>
-                <input type="email" name="_replyto" id="email-address" required=""><br>
-                <label for="message">Message</label><br>
-                <textarea rows="5" name="message" id="message" required=""></textarea><br>
-                <input id="form-button" type="submit" value="Submit">
-                <input type="hidden" name="_subject" id="email-subject" value="A new email from portfolio website!!!"><br>
-            </form>
-        </div>
-    </footer>
-    <script src="src/app.js"></script>
+  <!--
+    Static hidden form so Netlify's build-time bot can detect and register this form.
+    The React-rendered Contact form (src/sections/Contact/Contact.jsx) submits to it via AJAX.
+  -->
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+    <input type="text" name="bot-field" />
+  </form>
 </body>
 
 </html>
